@@ -12,3 +12,7 @@
 >
 >基于谷歌目标检测API，多相机目标检测识别.
 
+3.network-train-function
+>[网络训练](https://github.com/Jeffer-hua/network-train-function)
+>
+>使用过的较好的网络训练手册,如darknet-yolov3,objection-detection-API...
