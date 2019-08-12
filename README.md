@@ -16,3 +16,8 @@
 >[网络训练](https://github.com/Jeffer-hua/network-train-function)
 >
 >使用过的较好的网络训练手册,如darknet-yolov3,objection-detection-API...
+
+4.dog_cat_cnn
+>[猫狗大战](https://github.com/Jeffer-hua/computer-vision-recognition/tree/master/dog_cat_cnn)
+>
+>基于pytorch1.0搭建常见CNN网络识别猫狗
