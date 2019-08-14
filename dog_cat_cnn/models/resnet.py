@@ -3,7 +3,6 @@ from .basic_module import BasicModule
 from torch import nn
 import torch.nn.functional as F
 from collections import OrderedDict
-import math
 from torch.utils.model_zoo import load_url as load_state_dict_from_url
 
 __all__ = ['ResNet', 'resnet18', 'resnet34', 'resnet50', 'resnet101',
@@ -104,11 +103,10 @@ class ResNet(BasicModule):
 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):
-                n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
-                m.weight.data.normal_(0, math.sqrt(2. / n))
+                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
             elif isinstance(m, nn.BatchNorm2d):
-                m.weight.data.fill_(1)
-                m.bias.data.zero_()
+                nn.init.constant_(m.weight, 1)
+                nn.init.constant_(m.bias, 0)
 
     def _make_layer(self, block, outchannel, blocks, stride=1):
         downsample = None
