@@ -16,3 +16,7 @@
 >[Pytorch_CNN](https://github.com/Jeffer-hua/computer-vision-recognition/tree/master/image_classification)  
 基于pytorch1.1搭建通用图像分类框架CNN
 ---
+##### 5.image_enhance
+>[目标检测离线数据增强](https://github.com/Jeffer-hua/computer-vision-recognition/tree/master/image_enhance)
+针对目标检测的离线数据增强脚本，包含翻转，平移，缩放，裁剪，图像亮度等变化
+---
