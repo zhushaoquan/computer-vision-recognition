@@ -20,3 +20,7 @@
 >[目标检测离线数据增强](https://github.com/Jeffer-hua/computer-vision-recognition/tree/master/image_enhance)
 针对目标检测的离线数据增强脚本，包含翻转，平移，缩放，裁剪，图像亮度等变化
 ---
+##### 5.tf_serving
+>[TF serving](https://github.com/Jeffer-hua/computer-vision-recognition/tree/master/tf_serving)
+TF serving 部署Objection Detection API训练的目标检测模型
+---
